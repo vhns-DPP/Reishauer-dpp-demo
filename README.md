@@ -18,74 +18,186 @@ The current demonstrator combines:
 - Illustrative sustainability information
 - Mobile and web-based user interfaces
 
-## Live Demonstrator
+---
+
+# Live Demonstrator
 
 https://vhns-dpp.github.io/Reishauer-dpp-demo/
 
-## Repository Structure
+---
+
+# Repository Structure
 
 ```text
 /
+│
 ├── index.html
+│   Main DPP web application
+│
 ├── README.md
+│   Repository documentation
+│
 ├── aasx/
+│   Asset Administration Shell packages
+│
+│   ├── Reishauer_Spannmittel_DH28_DPP_V2_valid.aasx
+│   └── Reishauer_Spannmittel_DH28_DPP_V2_2_CO2_valid.aasx
+│
 ├── docs/
+│   Product-related documentation
+│
+│   ├── Bedienungsanleitung_DH.pdf
+│   ├── Reparaturblatt_Spannmittel.pdf
+│   ├── Kundenzeichnung_42712700_SKD.pdf
+│   ├── Aufspannzeichnung_42600919_SKD.pdf
+│   └── Stueckliste_42712700.xlsx
+│
 └── assets/
+    Images used by the DPP
+
+    ├── Spannmittel.png
+    ├── Anlagering.png
+    ├── Zwischenbuchse.png
+    ├── Kontrollring.png
+    └── OEM_Label.png
 ```
 
-## Demonstrated DPP Capabilities
+---
 
-### Product Identity
+# Demonstrated DPP Capabilities
+
+## Product Identity
+
+The demonstrator provides:
+
 - Product identification
 - Material number
 - Serial number
 - Manufacturer information
 - QR-code based access
+- Digital product representation
 
-### Technical Information
+---
+
+## Technical Information
+
+The DPP integrates key technical information such as:
+
 - Operating pressure
 - Maximum rotational speed
 - Machine compatibility
 - Assembly information
+- Product configuration data
 
-### Documentation Integration
+---
+
+## Documentation Integration
+
+The DPP links directly to relevant product documentation:
+
 - Operating manuals
 - Repair documentation
 - Technical drawings
 - Assembly drawings
 - Bill of Materials (BOM)
 
-### Material Intelligence
+This allows users to access all relevant information from a single digital entry point.
+
+---
+
+# Material Intelligence
+
+The demonstrator enriches the traditional Bill of Materials with additional material-related information.
+
+Current capabilities include:
+
 - Material classification
 - Material distribution
 - Material composition
 - Chemical composition of selected materials
 
-### Lifecycle Information
+Examples:
+
+- 1.6587 (18CrNiMo7-6)
+- 1.1191 (C45E)
+- 1.3343 (HS6-5-2C)
+
+The objective is to demonstrate how future Digital Product Passports may support transparency regarding product composition and circularity.
+
+---
+
+# Lifecycle Information
+
+The demonstrator includes lifecycle-related information such as:
+
 - Guaranteed lifetime
 - Repairability information
 - Service information
 - Reconditioning potential
 
-### Sustainability Demonstrator
+Example:
+
+- Guaranteed lifetime: 105'000 clamping cycles
+- Repair options: Partial repair or complete overhaul
+- Expected lifetime: 10+ years with regular maintenance and refurbishment
+
+---
+
+# Sustainability Demonstrator
+
+The repository contains an illustrative sustainability demonstrator.
+
+Current visualisations include:
+
 - Material distribution
 - Supplier contribution
 - Illustrative CO₂ contribution
 
-**Important:** CO₂ values are illustrative demonstration values only and are not validated Product Carbon Footprints (PCF).
+## Important Notice
 
-## Asset Administration Shell (AAS)
+The CO₂ values shown in the demonstrator are illustrative demonstration values only.
 
-Included AAS packages:
+They are NOT:
 
-- Reishauer_Spannmittel_DH28_DPP_V2_valid.aasx
-- Reishauer_Spannmittel_DH28_DPP_V2_2_CO2_valid.aasx
+- Product Carbon Footprints (PCF)
+- Corporate Carbon Footprints
+- Validated sustainability data
+- Verified environmental declarations
 
-## Current Maturity Level
+The values are solely intended to demonstrate how sustainability-related information could be integrated into future Digital Product Passports.
 
-**Demonstrator / Pilot Stage**
+---
+
+# Asset Administration Shell (AAS)
+
+The repository contains Asset Administration Shell packages compatible with the IDTA Asset Administration Shell concept.
+
+Current versions:
+
+| File | Description |
+|--------|--------|
+| Reishauer_Spannmittel_DH28_DPP_V2_valid.aasx | Base demonstrator |
+| Reishauer_Spannmittel_DH28_DPP_V2_2_CO2_valid.aasx | Extended demonstrator including material and sustainability submodels |
+
+---
+
+# Viewing the AAS
+
+The AAS packages can be opened with:
+
+- Eclipse AASX Package Explorer
+- Eclipse BaSyx
+- IDTA-compatible AAS environments
+- Other Asset Administration Shell tools
+
+---
+
+# Current Maturity Level
+
+## Demonstrator / Pilot Stage
 
 Implemented:
+
 - Product structure
 - Documentation integration
 - Asset Administration Shell
@@ -94,14 +206,28 @@ Implemented:
 - Sustainability demonstrator
 
 Potential future extensions:
+
 - Supplier integration
 - Validated Product Carbon Footprints
+- DPP compliance extensions
 - Data Space integration
 - Service history
 - Repair history
+- Lifecycle event tracking
 - Circularity indicators
+- Automated sustainability reporting
 
-## Contact
+---
+
+# Project Context
+
+This demonstrator was developed as part of an exploratory pilot project to evaluate how Digital Product Passports and Asset Administration Shells can support future product transparency, lifecycle management, service processes and sustainability reporting.
+
+The implementation should be regarded as a proof-of-concept and discussion platform for future developments.
+
+---
+
+# Contact
 
 **Competence Center for Automation & Digitalisation**
 
