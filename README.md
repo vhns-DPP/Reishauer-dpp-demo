@@ -235,7 +235,7 @@ In this version, selected extended product information is no longer displayed pu
 Demo password:
 
 ```text
-Reishauer_@2030
+XXXXXXXXXXXXXXXX
 ```
 
 ## Important Security Notice
